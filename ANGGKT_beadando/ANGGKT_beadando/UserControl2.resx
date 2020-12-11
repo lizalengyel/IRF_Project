@@ -117,47 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Ok-icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Ok-icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cica5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cica5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cica9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cica9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cica3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cica3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cica1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cica1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Users-Enter-2-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Users-Enter-2-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="check-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\check-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cica8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cica8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\icon2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fokep" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\fokep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cica7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cica7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cica6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cica6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ok-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\Ok-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="check-icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\check-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

@@ -63,6 +63,26 @@ namespace ANGGKT_beadando.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap check_icon {
+            get {
+                object obj = ResourceManager.GetObject("check-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap check_icon1 {
+            get {
+                object obj = ResourceManager.GetObject("check-icon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cica1 {
             get {
                 object obj = ResourceManager.GetObject("cica1", resourceCulture);
@@ -136,6 +156,46 @@ namespace ANGGKT_beadando.Properties {
         internal static System.Drawing.Bitmap fokep {
             get {
                 object obj = ResourceManager.GetObject("fokep", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon2 {
+            get {
+                object obj = ResourceManager.GetObject("icon2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ok_icon {
+            get {
+                object obj = ResourceManager.GetObject("Ok-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ok_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Ok-icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Users_Enter_2_icon {
+            get {
+                object obj = ResourceManager.GetObject("Users-Enter-2-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
