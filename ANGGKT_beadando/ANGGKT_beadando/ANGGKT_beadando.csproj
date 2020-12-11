@@ -142,6 +142,12 @@
   <ItemGroup>
     <None Include="bin\Debug\cica1.jpg" />
     <None Include="bin\Debug\cica5.jpg" />
+    <None Include="bin\Debug\cica6.jpg" />
+    <None Include="bin\Debug\cica3.jpg" />
+    <None Include="bin\Debug\cica8.jpg" />
+    <None Include="bin\Debug\cica7.jpg" />
+    <None Include="bin\Debug\cica9.jpg" />
+    <None Include="bin\Debug\fokep.png" />
     <Content Include="CicaModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>CicaModel.Context.cs</LastGenOutput>
