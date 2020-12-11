@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+
 
 namespace ANGGKT_beadando
 {
@@ -16,6 +19,7 @@ namespace ANGGKT_beadando
         public Form1()
         {
             InitializeComponent();
+            textBox2.PasswordChar = '*';
         }
 
         private void label1_Click(object sender, EventArgs e)

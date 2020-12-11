@@ -40,10 +40,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(117, 176);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1059, 628);
+            this.panel1.Size = new System.Drawing.Size(899, 440);
             this.panel1.TabIndex = 0;
             // 
             // button1
@@ -57,7 +56,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(340, 193);
+            this.button2.Location = new System.Drawing.Point(200, 181);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(353, 152);
             this.button2.TabIndex = 1;
