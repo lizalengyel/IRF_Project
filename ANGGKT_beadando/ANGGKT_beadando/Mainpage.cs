@@ -21,11 +21,13 @@ namespace ANGGKT_beadando
 
         protected override void OnPaint(PaintEventArgs e)
         {
-            Graphics g = e.Graphics;
+           // Graphics g = e.Graphics;
+            Graphics g = panel1.CreateGraphics();
 
             g.SmoothingMode = SmoothingMode.AntiAlias;
 
             Rectangle rec = new Rectangle(10, 10, 150, 150);
+            Rectangle rec1 = new Rectangle(150, 150, 100, 100);
 
             Pen pirosP = new Pen(Color.Red, 4);
             Pen feketeP = Pens.Black;
@@ -33,6 +35,7 @@ namespace ANGGKT_beadando
             SolidBrush zoldB = new SolidBrush(Color.Green);
 
             g.DrawRectangle(pirosP, rec);
+            g.DrawRectangle(feketeP, rec1);
         }
 
     }

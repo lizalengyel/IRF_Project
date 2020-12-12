@@ -59,5 +59,35 @@ namespace ANGGKT_beadando
             }
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ahhoz, hogy több információt láss a cicákról, először lépj be!");
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ahhoz, hogy több információt láss a cicákról, először lépj be!");
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ahhoz, hogy több információt láss a cicákról, először lépj be!");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ahhoz, hogy több információt láss a cicákról, először lépj be!");
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ahhoz, hogy több információt láss a cicákról, először lépj be!");
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ahhoz, hogy több információt láss a cicákról, először lépj be!");
+        }
     }
 }

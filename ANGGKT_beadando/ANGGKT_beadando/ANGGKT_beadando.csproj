@@ -180,6 +180,13 @@
     <None Include="bin\Debug\Ok-icon %281%29.png" />
     <None Include="bin\Debug\check-icon.png" />
     <None Include="bin\Debug\Users-Enter-2-icon.png" />
+    <None Include="bin\Debug\cica10.jpg" />
+    <None Include="bin\Debug\cica11.jpg" />
+    <None Include="bin\Debug\cica12.jpg" />
+    <None Include="bin\Debug\cica13.jpg" />
+    <None Include="bin\Debug\cica14.jpg" />
+    <None Include="bin\Debug\cica15.jpg" />
+    <None Include="bin\Debug\Heart-icon.png" />
     <Content Include="CicaModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>CicaModel.Context.cs</LastGenOutput>

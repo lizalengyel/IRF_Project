@@ -93,6 +93,66 @@ namespace ANGGKT_beadando.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cica10 {
+            get {
+                object obj = ResourceManager.GetObject("cica10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cica11 {
+            get {
+                object obj = ResourceManager.GetObject("cica11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cica12 {
+            get {
+                object obj = ResourceManager.GetObject("cica12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cica13 {
+            get {
+                object obj = ResourceManager.GetObject("cica13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cica14 {
+            get {
+                object obj = ResourceManager.GetObject("cica14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cica15 {
+            get {
+                object obj = ResourceManager.GetObject("cica15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cica3 {
             get {
                 object obj = ResourceManager.GetObject("cica3", resourceCulture);
@@ -156,6 +216,16 @@ namespace ANGGKT_beadando.Properties {
         internal static System.Drawing.Bitmap fokep {
             get {
                 object obj = ResourceManager.GetObject("fokep", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Heart_icon {
+            get {
+                object obj = ResourceManager.GetObject("Heart-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
