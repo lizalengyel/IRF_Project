@@ -35,12 +35,18 @@ namespace ANGGKT_beadando
             Rectangle rec1 = new Rectangle(150, 150, 100, 100);
 
             Pen pirosP = new Pen(Color.Red, 4);
-            Pen feketeP = Pens.Black;
+            Pen feketeP = new Pen( Color.Black, 4);
 
             SolidBrush zoldB = new SolidBrush(Color.Green);
 
             g.DrawRectangle(pirosP, rec);
             g.DrawRectangle(feketeP, rec1);
+            g.DrawLine(feketeP, 0, 85, this.Width, 85);
+            g.FillEllipse(Brushes.DarkCyan, 250, 40, 30, 30);
+            g.FillEllipse(Brushes.LightCyan, 280, 30, 40, 40);
+            g.FillEllipse(Brushes.LightGray, 320, 20, 50, 50);
+            g.FillEllipse(Brushes.LightCyan, 370, 30, 40, 40);
+            g.FillEllipse(Brushes.DarkCyan, 410, 40, 30, 30);
         }
 
         private void button1_Click(object sender, EventArgs e)
