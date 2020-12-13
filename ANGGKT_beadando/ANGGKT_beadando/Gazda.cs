@@ -26,9 +26,11 @@ namespace ANGGKT_beadando
         public Nullable<int> kor { get; set; }
         public System.DateTime orokbefogdatum { get; set; }
         public int account_fk { get; set; }
+        public Nullable<int> cica_fk { get; set; }
     
         public virtual Account Account { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CICA> CICAs { get; set; }
+        public virtual CICA CICA { get; set; }
     }
 }

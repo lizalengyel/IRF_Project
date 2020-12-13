@@ -26,6 +26,7 @@ namespace ANGGKT_beadando
         }
     
         public virtual DbSet<Account> Accounts { get; set; }
+        public virtual DbSet<Admin> Admins { get; set; }
         public virtual DbSet<CICA> CICAs { get; set; }
         public virtual DbSet<Gazda> Gazdas { get; set; }
     }

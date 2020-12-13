@@ -20,6 +20,7 @@ namespace ANGGKT_beadando
         {
             InitializeComponent();
             textBox2.PasswordChar = '*';
+            adminpasstext.PasswordChar = '*';
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -98,9 +99,9 @@ namespace ANGGKT_beadando
             da.Fill(dt);
             if (dt.Rows[0][0].ToString() == "1")
             {
-                this.Hide();
-                Mainpage mp = new Mainpage();
-                mp.Show();
+                panel1.Controls.Clear();
+                UserControl4 uc4 = new UserControl4();
+                panel1.Controls.Add(uc4);
             }
             else
             {

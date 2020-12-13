@@ -14,15 +14,24 @@ namespace ANGGKT_beadando
     
     public partial class CICA
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public CICA()
+        {
+            this.Gazdas = new HashSet<Gazda>();
+        }
+    
         public int cica_id { get; set; }
         public string nev { get; set; }
-        public int kor { get; set; }
+        public double kor { get; set; }
         public string szin { get; set; }
         public string fajta { get; set; }
         public System.DateTime felvetel { get; set; }
         public bool van_egazdi { get; set; }
         public Nullable<int> gazda_fk { get; set; }
+        public bool neme { get; set; }
     
         public virtual Gazda Gazda { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Gazda> Gazdas { get; set; }
     }
 }

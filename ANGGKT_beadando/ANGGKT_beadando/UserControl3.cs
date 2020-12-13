@@ -14,8 +14,8 @@ namespace ANGGKT_beadando
     public partial class UserControl3 : UserControl
     {
 
-        CicaEntities contect = new CicaEntities();
-              private object cicaDataset;
+        CicaEntities context = new CicaEntities();
+   
 
         public UserControl3()
         {
@@ -28,7 +28,7 @@ namespace ANGGKT_beadando
             //mentés, új gazda felvétele
 
             Gazda gazda = new Gazda();
-            contect.Gazdas.Load();
+            context.Gazdas.Load();
 
             //adatok feltöltése
 
@@ -37,20 +37,33 @@ namespace ANGGKT_beadando
             gazda.kor = Convert.ToInt16(korText.Text);
             gazda.orokbefogdatum = DateTime.Now;
             gazda.account_fk = 104;
+            gazda.cica_fk = Mainpage.cicaid;
 
+
+            try
+            {
+                context.SaveChanges();
+                MessageBox.Show("Gratulálunk! Boldoggá teheted egy kiscica életét!");
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
             //cica van-e gazdáját átírni 1-re
 
-            CicaDataSet.CICARow cr = cicaDataSet1.CICA.FindBycica_id(112);
-            cr.van_egazdi = true;
-            cr.gazda_fk = gazda.gazda_id;
+            //  CicaDataSet.CICARow cr = cicaDataSet1.CICA.FindBycica_id(112);
+            //  cr.van_egazdi = true;
+            //   cr.gazda_fk = gazda.gazda_id;
         }
 
-        private void cICABindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.cICABindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.cicaDataSet1);
+        //private void cICABindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        //{
+        //    this.Validate();
+        //    this.cICABindingSource.EndEdit();
+        //    this.tableAdapterManager.UpdateAll(this.cicaDataSet1);
 
-        }
+        //}
     }
 }
