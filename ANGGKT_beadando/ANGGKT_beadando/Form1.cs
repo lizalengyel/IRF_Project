@@ -89,5 +89,23 @@ namespace ANGGKT_beadando
         {
             MessageBox.Show("Ahhoz, hogy több információt láss a cicákról, először lépj be!");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SqlConnection connect = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\lizal\Source\Repos\IRF_Project\ANGGKT_beadando\ANGGKT_beadando\Database1.mdf; Integrated Security = True");
+            SqlDataAdapter da = new SqlDataAdapter("Select Count(*) From Admin where Admin='" + admintext.Text + "' and Password='" + adminpasstext.Text + "'", connect);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            if (dt.Rows[0][0].ToString() == "1")
+            {
+                this.Hide();
+                Mainpage mp = new Mainpage();
+                mp.Show();
+            }
+            else
+            {
+                MessageBox.Show("Hibás Admin-név vagy jelszó! Kérlek próbáld meg újra!");
+            }
+        }
     }
 }

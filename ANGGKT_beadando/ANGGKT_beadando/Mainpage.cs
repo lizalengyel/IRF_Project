@@ -13,6 +13,11 @@ namespace ANGGKT_beadando
 {
     public partial class Mainpage : Form
     {
+
+        CicaEntities context = new CicaEntities();
+        public static int cicaid;
+
+
         public Mainpage()
         {
             InitializeComponent();
@@ -38,6 +43,113 @@ namespace ANGGKT_beadando
             g.DrawRectangle(feketeP, rec1);
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl3 userControl3 = new UserControl3();
+            panel1.Controls.Add(userControl3);
+            userControl3.Dock = DockStyle.Fill;
+            cicaid = 112;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl3 userControl3 = new UserControl3();
+            panel1.Controls.Add(userControl3);
+            userControl3.Dock = DockStyle.Fill;
+            cicaid = 113;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl3 userControl3 = new UserControl3();
+            panel1.Controls.Add(userControl3);
+            userControl3.Dock = DockStyle.Fill;
+            cicaid = 114;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl3 userControl3 = new UserControl3();
+            panel1.Controls.Add(userControl3);
+            userControl3.Dock = DockStyle.Fill;
+            cicaid = 116;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl3 userControl3 = new UserControl3();
+            panel1.Controls.Add(userControl3);
+            userControl3.Dock = DockStyle.Fill;
+            cicaid = 117;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl3 userControl3 = new UserControl3();
+            panel1.Controls.Add(userControl3);
+            userControl3.Dock = DockStyle.Fill;
+            cicaid = 118;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl3 userControl3 = new UserControl3();
+            panel1.Controls.Add(userControl3);
+            userControl3.Dock = DockStyle.Fill;
+            cicaid = 119;
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl3 userControl3 = new UserControl3();
+            panel1.Controls.Add(userControl3);
+            userControl3.Dock = DockStyle.Fill;
+            cicaid = 120;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl3 userControl3 = new UserControl3();
+            panel1.Controls.Add(userControl3);
+            userControl3.Dock = DockStyle.Fill;
+            cicaid = 121;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl3 userControl3 = new UserControl3();
+            panel1.Controls.Add(userControl3);
+            userControl3.Dock = DockStyle.Fill;
+            cicaid = 122;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl3 userControl3 = new UserControl3();
+            panel1.Controls.Add(userControl3);
+            userControl3.Dock = DockStyle.Fill;
+            cicaid = 123;
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            UserControl3 userControl3 = new UserControl3();
+            panel1.Controls.Add(userControl3);
+            userControl3.Dock = DockStyle.Fill;
+            cicaid = 124;
+        }
     }
 
 

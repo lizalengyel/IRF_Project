@@ -76,6 +76,11 @@
     <Compile Include="CICA.cs">
       <DependentUpon>CicaModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="CicaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CicaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CicaModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -120,6 +125,12 @@
     <Compile Include="UserControl2.Designer.cs">
       <DependentUpon>UserControl2.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl3.Designer.cs">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -142,10 +153,24 @@
     <EmbeddedResource Include="UserControl2.resx">
       <DependentUpon>UserControl2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControl3.resx">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="CicaModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>CicaModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="CicaDataSet.xsc">
+      <DependentUpon>CicaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CicaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CicaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CicaDataSet.xss">
+      <DependentUpon>CicaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="CicaModel.edmx.diagram">
       <DependentUpon>CicaModel.edmx</DependentUpon>
     </None>
