@@ -39,14 +39,14 @@ namespace ANGGKT_beadando
 
             SolidBrush zoldB = new SolidBrush(Color.Green);
 
-            g.DrawRectangle(pirosP, rec);
-            g.DrawRectangle(feketeP, rec1);
+            //g.DrawRectangle(pirosP, rec);
+            //g.DrawRectangle(feketeP, rec1);
             g.DrawLine(feketeP, 0, 85, this.Width, 85);
-            g.FillEllipse(Brushes.DarkCyan, 250, 40, 30, 30);
-            g.FillEllipse(Brushes.LightCyan, 280, 30, 40, 40);
-            g.FillEllipse(Brushes.LightGray, 320, 20, 50, 50);
-            g.FillEllipse(Brushes.LightCyan, 370, 30, 40, 40);
-            g.FillEllipse(Brushes.DarkCyan, 410, 40, 30, 30);
+            g.FillEllipse(Brushes.DarkCyan, 165, 40, 30, 30);
+            g.FillEllipse(Brushes.LightCyan, 195, 30, 40, 40);
+            g.FillEllipse(Brushes.LightGray, 235, 20, 50, 50);
+            g.FillEllipse(Brushes.LightCyan, 285, 30, 40, 40);
+            g.FillEllipse(Brushes.DarkCyan, 325, 40, 30, 30);
         }
 
         private void button1_Click(object sender, EventArgs e)
