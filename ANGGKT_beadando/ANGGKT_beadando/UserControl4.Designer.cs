@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -46,8 +47,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cicaDataSet = new ANGGKT_beadando.CicaDataSet();
+            this.cICABindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cICATableAdapter = new ANGGKT_beadando.CicaDataSetTableAdapters.CICATableAdapter();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.macskakor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cicaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cICABindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -223,19 +233,68 @@
             this.button2.Text = "Vissza";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(638, 267);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(139, 70);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "Letöltés";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(566, 236);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(169, 20);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "Cica tábla exportálása:";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(92, 555);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(929, 150);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // cicaDataSet
+            // 
+            this.cicaDataSet.DataSetName = "CicaDataSet";
+            this.cicaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cICABindingSource
+            // 
+            this.cICABindingSource.DataMember = "CICA";
+            this.cICABindingSource.DataSource = this.cicaDataSet;
+            // 
+            // cICATableAdapter
+            // 
+            this.cICATableAdapter.ClearBeforeFill = true;
+            // 
             // UserControl4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "UserControl4";
-            this.Size = new System.Drawing.Size(851, 612);
+            this.Size = new System.Drawing.Size(1121, 817);
+            this.Load += new System.EventHandler(this.UserControl4_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.macskakor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cicaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cICABindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,5 +320,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource cICABindingSource;
+        private CicaDataSet cicaDataSet;
+        private CicaDataSetTableAdapters.CICATableAdapter cICATableAdapter;
     }
 }
