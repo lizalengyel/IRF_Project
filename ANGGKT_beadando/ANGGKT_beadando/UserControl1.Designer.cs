@@ -34,6 +34,10 @@
             this.emailtextbox = new System.Windows.Forms.TextBox();
             this.passwordtextbox = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.ismetjelszotxt = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dgwAccounts = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwAccounts)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -58,7 +62,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(380, 325);
+            this.label3.Location = new System.Drawing.Point(380, 301);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 20);
             this.label3.TabIndex = 4;
@@ -66,17 +70,18 @@
             // 
             // emailtextbox
             // 
-            this.emailtextbox.Location = new System.Drawing.Point(503, 250);
+            this.emailtextbox.Location = new System.Drawing.Point(512, 250);
             this.emailtextbox.Name = "emailtextbox";
             this.emailtextbox.Size = new System.Drawing.Size(147, 26);
             this.emailtextbox.TabIndex = 5;
             // 
             // passwordtextbox
             // 
-            this.passwordtextbox.Location = new System.Drawing.Point(503, 325);
+            this.passwordtextbox.Location = new System.Drawing.Point(512, 295);
             this.passwordtextbox.Name = "passwordtextbox";
             this.passwordtextbox.Size = new System.Drawing.Size(147, 26);
             this.passwordtextbox.TabIndex = 6;
+            this.passwordtextbox.TextChanged += new System.EventHandler(this.passwordtextbox_TextChanged);
             // 
             // button2
             // 
@@ -90,10 +95,38 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // ismetjelszotxt
+            // 
+            this.ismetjelszotxt.Location = new System.Drawing.Point(523, 327);
+            this.ismetjelszotxt.Name = "ismetjelszotxt";
+            this.ismetjelszotxt.Size = new System.Drawing.Size(100, 26);
+            this.ismetjelszotxt.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(380, 333);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(119, 20);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Ismételt Jelszó:";
+            // 
+            // dgwAccounts
+            // 
+            this.dgwAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwAccounts.Location = new System.Drawing.Point(62, 380);
+            this.dgwAccounts.Name = "dgwAccounts";
+            this.dgwAccounts.RowTemplate.Height = 28;
+            this.dgwAccounts.Size = new System.Drawing.Size(240, 150);
+            this.dgwAccounts.TabIndex = 9;
+            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.dgwAccounts);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.ismetjelszotxt);
             this.Controls.Add(this.passwordtextbox);
             this.Controls.Add(this.emailtextbox);
             this.Controls.Add(this.label3);
@@ -102,6 +135,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(1044, 690);
+            ((System.ComponentModel.ISupportInitialize)(this.dgwAccounts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,5 +149,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox emailtextbox;
         private System.Windows.Forms.TextBox passwordtextbox;
+        private System.Windows.Forms.TextBox ismetjelszotxt;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dgwAccounts;
     }
 }
