@@ -14,7 +14,7 @@ namespace ANGGKT_beadando
     public partial class UserControl3 : UserControl
     {
 
-        CicaEntities context = new CicaEntities();
+        CicaEntities1 context = new CicaEntities1();
    
 
         public UserControl3()

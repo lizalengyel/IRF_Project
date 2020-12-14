@@ -13,10 +13,10 @@ namespace ANGGKT_beadando
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CicaEntities : DbContext
+    public partial class CicaEntities1 : DbContext
     {
-        public CicaEntities()
-            : base("name=CicaEntities")
+        public CicaEntities1()
+            : base("name=CicaEntities1")
         {
         }
     

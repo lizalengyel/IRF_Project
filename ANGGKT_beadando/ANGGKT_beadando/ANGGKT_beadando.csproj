@@ -168,10 +168,6 @@
     <EmbeddedResource Include="UserControl4.resx">
       <DependentUpon>UserControl4.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="CicaModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CicaModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="CicaDataSet.xsc">
       <DependentUpon>CicaDataSet.xsd</DependentUpon>
     </None>
@@ -183,6 +179,10 @@
     <None Include="CicaDataSet.xss">
       <DependentUpon>CicaDataSet.xsd</DependentUpon>
     </None>
+    <EntityDeploy Include="CicaModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CicaModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
     <None Include="CicaModel.edmx.diagram">
       <DependentUpon>CicaModel.edmx</DependentUpon>
     </None>
@@ -224,23 +224,6 @@
     <None Include="bin\Debug\cica14.jpg" />
     <None Include="bin\Debug\cica15.jpg" />
     <None Include="bin\Debug\Heart-icon.png" />
-    <Content Include="CicaModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>CicaModel.Context.cs</LastGenOutput>
-      <DependentUpon>CicaModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="CicaModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CicaModel.edmx</DependentUpon>
-      <LastGenOutput>CicaModel.cs</LastGenOutput>
-    </Content>
-    <Content Include="Database1.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database1_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
@@ -256,6 +239,18 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CicaModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CicaModel.edmx</DependentUpon>
+      <LastGenOutput>CicaModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="CicaModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CicaModel.edmx</DependentUpon>
+      <LastGenOutput>CicaModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

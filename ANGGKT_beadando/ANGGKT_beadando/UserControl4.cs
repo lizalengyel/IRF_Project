@@ -13,7 +13,7 @@ namespace ANGGKT_beadando
 {
     public partial class UserControl4 : UserControl
     {
-        CicaEntities context = new CicaEntities();
+        CicaEntities1 context = new CicaEntities1();
        // public static int kor;
         public static bool neme;
         public static string datum;

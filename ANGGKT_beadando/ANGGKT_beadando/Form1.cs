@@ -44,7 +44,7 @@ namespace ANGGKT_beadando
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\lizal\Source\Repos\IRF_Project\ANGGKT_beadando\ANGGKT_beadando\Database1.mdf; Integrated Security = True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Temp\Database1.mdf;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter dataAdapter = new SqlDataAdapter("Select Count(*) From Account where email='" + textBox1.Text + "' and password='" + textBox2.Text + "'", con);
             DataTable dt = new DataTable();
             dataAdapter.Fill(dt);
@@ -93,7 +93,7 @@ namespace ANGGKT_beadando
 
         private void button3_Click(object sender, EventArgs e)
         {
-            SqlConnection connect = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\lizal\Source\Repos\IRF_Project\ANGGKT_beadando\ANGGKT_beadando\Database1.mdf; Integrated Security = True");
+            SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Temp\Database1.mdf;Integrated Security=True;Connect Timeout=30");
             SqlDataAdapter da = new SqlDataAdapter("Select Count(*) From Admin where Admin='" + admintext.Text + "' and Password='" + adminpasstext.Text + "'", connect);
             DataTable dt = new DataTable();
             da.Fill(dt);

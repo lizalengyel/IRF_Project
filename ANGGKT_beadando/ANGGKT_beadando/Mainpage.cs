@@ -14,7 +14,7 @@ namespace ANGGKT_beadando
     public partial class Mainpage : Form
     {
 
-        CicaEntities context = new CicaEntities();
+        CicaEntities1 context = new CicaEntities1();
         public static int cicaid;
 
 

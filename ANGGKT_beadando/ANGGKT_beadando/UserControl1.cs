@@ -12,7 +12,7 @@ namespace ANGGKT_beadando
 {
     public partial class UserControl1 : UserControl
     {
-        CicaEntities context = new CicaEntities();
+        CicaEntities1 context = new CicaEntities1();
         public static string email;
         public static string password;
         public static int accountid;
