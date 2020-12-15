@@ -84,6 +84,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.label24);
             this.panel1.Controls.Add(this.button2);
@@ -127,7 +128,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.groupBox1.BackColor = System.Drawing.Color.DarkTurquoise;
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.label25);
             this.groupBox1.Controls.Add(this.label27);
@@ -142,6 +143,7 @@
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("Papyrus", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(105, 140);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(106, 38);
@@ -153,18 +155,20 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(101, 32);
+            this.label25.Font = new System.Drawing.Font("Papyrus", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(78, 13);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(118, 20);
+            this.label25.Size = new System.Drawing.Size(161, 31);
             this.label25.TabIndex = 37;
             this.label25.Text = "Admin belépés:";
             // 
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(54, 106);
+            this.label27.Font = new System.Drawing.Font("Papyrus", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(50, 104);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(58, 20);
+            this.label27.Size = new System.Drawing.Size(80, 31);
             this.label27.TabIndex = 39;
             this.label27.Text = "Jelszó:";
             // 
@@ -178,9 +182,10 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(54, 61);
+            this.label26.Font = new System.Drawing.Font("Papyrus", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(50, 59);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(58, 20);
+            this.label26.Size = new System.Drawing.Size(83, 31);
             this.label26.TabIndex = 38;
             this.label26.Text = "Admin:";
             // 
@@ -206,11 +211,12 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Font = new System.Drawing.Font("Papyrus", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::ANGGKT_beadando.Properties.Resources.Users_Enter_2_icon;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(962, 7);
+            this.button2.Location = new System.Drawing.Point(949, 7);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 43);
+            this.button2.Size = new System.Drawing.Size(126, 43);
             this.button2.TabIndex = 33;
             this.button2.Text = "Belépés";
             this.button2.UseVisualStyleBackColor = true;
@@ -218,11 +224,12 @@
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Papyrus", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::ANGGKT_beadando.Properties.Resources.check_icon;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(866, 174);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 45);
+            this.button1.Size = new System.Drawing.Size(155, 45);
             this.button1.TabIndex = 32;
             this.button1.Text = "Regisztrálok";
             this.button1.UseCompatibleTextRendering = true;
@@ -232,9 +239,10 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(796, 138);
+            this.label23.Font = new System.Drawing.Font("Perpetua", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(790, 148);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(279, 20);
+            this.label23.Size = new System.Drawing.Size(284, 23);
             this.label23.TabIndex = 31;
             this.label23.Text = "Még nem regisztráltál? Itt a lehetőség!";
             // 
@@ -483,25 +491,25 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(456, 18);
+            this.label4.Font = new System.Drawing.Font("Papyrus", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(450, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 20);
+            this.label4.Size = new System.Drawing.Size(107, 25);
             this.label4.TabIndex = 5;
             this.label4.Text = "Jelentkezz be!";
             // 
             // textBox2
             // 
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(843, 13);
+            this.textBox2.Location = new System.Drawing.Point(815, 14);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
+            this.textBox2.Size = new System.Drawing.Size(119, 26);
             this.textBox2.TabIndex = 4;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(646, 15);
+            this.textBox1.Location = new System.Drawing.Point(628, 14);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(127, 26);
             this.textBox1.TabIndex = 3;
@@ -510,9 +518,10 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(779, 13);
+            this.label3.Font = new System.Drawing.Font("Papyrus", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(761, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 20);
+            this.label3.Size = new System.Drawing.Size(59, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Jelszó:";
             // 
@@ -520,16 +529,19 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(583, 15);
+            this.label2.Font = new System.Drawing.Font("Papyrus", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(572, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 20);
+            this.label2.Size = new System.Drawing.Size(59, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "E-mail:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Pristina", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(327, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(367, 42);

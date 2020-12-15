@@ -99,9 +99,7 @@ namespace ANGGKT_beadando
             PasswordCheckPassed = passwordtextbox.Text.Equals(ismetjelszotxt.Text);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
+
+
     }
 }

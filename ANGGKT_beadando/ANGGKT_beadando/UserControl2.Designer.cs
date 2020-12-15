@@ -28,33 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Papyrus", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(230, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(375, 51);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Örökbefogadható cicák";
-            // 
-            // UserControl2
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
-            this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(955, 549);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
     }
 }

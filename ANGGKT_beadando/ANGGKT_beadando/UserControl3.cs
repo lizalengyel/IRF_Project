@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Entity;
+using System.Text.RegularExpressions;
 
 namespace ANGGKT_beadando
 {
@@ -22,6 +23,18 @@ namespace ANGGKT_beadando
             InitializeComponent();
             label7.Text = DateTime.Now.ToShortDateString();
         }
+
+      
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            nevtext.Clear();
+            korText.Clear();
+            telotext.Clear();
+
+        }
+
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -51,19 +64,78 @@ namespace ANGGKT_beadando
 
                 MessageBox.Show(ex.Message);
             }
-            //cica van-e gazdáját átírni 1-re
 
-            //  CicaDataSet.CICARow cr = cicaDataSet1.CICA.FindBycica_id(112);
-            //  cr.van_egazdi = true;
-            //   cr.gazda_fk = gazda.gazda_id;
         }
 
-        //private void cICABindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        //{
-        //    this.Validate();
-        //    this.cICABindingSource.EndEdit();
-        //    this.tableAdapterManager.UpdateAll(this.cicaDataSet1);
+        private void nevtext_Validating(object sender, CancelEventArgs e)
+        {
 
-        //}
+            Regex r = new Regex(@"^[A-Z-ÁÉÓÖŐÜŰÚ]{1}[a-z-áéóöőúüű]+[ ]{1}([A-Z-ÁÉÓÖŐÜŰÚ]{1}[a-z-áéóöőúüű]+|[A-Z-ÁÉÓÖŐÜŰÚ]{1}[a-z-áéóöőúüű]+[ ]{1}[A-Z-ÁÉÓÖŐÜŰÚ]{1}[a-z-áéóöőúüű]+)$");
+
+            if (r.IsMatch(nevtext.Text))
+            {
+                nevtext.BackColor = Color.PaleGreen;
+                button1.Enabled = true;
+            }
+            else
+            {
+                nevtext.BackColor = Color.Red;
+                e.Cancel = true;
+                nevlabel.Visible = true;
+                button1.Enabled = false;
+
+            }
+        }
+
+        private void nevtext_TextChanged(object sender, EventArgs e)
+        {
+            this.Validate();
+        }
+
+        private void korText_Validating(object sender, CancelEventArgs e)
+        {
+            Regex r = new Regex(@"^[0-9]{1,2}$");
+
+
+            if (r.IsMatch(korText.Text))
+            {
+                korText.BackColor = Color.PaleGreen;
+            }
+            else
+            {
+                korText.BackColor = Color.Red;
+                e.Cancel = true;
+                korlabel.Visible = true;
+            }
+        }
+
+        private void korText_TextChanged(object sender, EventArgs e)
+        {
+            this.Validate();
+        }
+
+        private void telotext_Validating(object sender, CancelEventArgs e)
+        {
+            Regex r = new Regex(@"^(\+36|06)(-|/)[0-9]{1,2}-[0-9]{3}-?[0-9]{3,4}$");
+
+
+            if (r.IsMatch(telotext.Text))
+            {
+                telotext.BackColor = Color.PaleGreen;
+            }
+            else
+            {
+                telotext.BackColor = Color.Red;
+                e.Cancel = true;
+                telefonszamlabel.Visible = true;
+            }
+
+
+        }
+
+        private void telotext_TextChanged(object sender, EventArgs e)
+        {
+            this.Validate();
+        }
     }
 }
