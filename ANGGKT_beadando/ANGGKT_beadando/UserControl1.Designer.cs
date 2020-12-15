@@ -36,8 +36,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.ismetjelszotxt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dgwAccounts = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwAccounts)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -87,7 +86,7 @@
             // 
             this.button2.Image = global::ANGGKT_beadando.Properties.Resources.check_icon1;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(450, 403);
+            this.button2.Location = new System.Drawing.Point(615, 422);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(173, 40);
             this.button2.TabIndex = 2;
@@ -111,20 +110,21 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Ismételt Jelszó:";
             // 
-            // dgwAccounts
+            // button1
             // 
-            this.dgwAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwAccounts.Location = new System.Drawing.Point(62, 380);
-            this.dgwAccounts.Name = "dgwAccounts";
-            this.dgwAccounts.RowTemplate.Height = 28;
-            this.dgwAccounts.Size = new System.Drawing.Size(240, 150);
-            this.dgwAccounts.TabIndex = 9;
+            this.button1.Location = new System.Drawing.Point(464, 438);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dgwAccounts);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.ismetjelszotxt);
             this.Controls.Add(this.passwordtextbox);
@@ -135,7 +135,6 @@
             this.Controls.Add(this.label1);
             this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(1044, 690);
-            ((System.ComponentModel.ISupportInitialize)(this.dgwAccounts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,6 +150,6 @@
         private System.Windows.Forms.TextBox passwordtextbox;
         private System.Windows.Forms.TextBox ismetjelszotxt;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dgwAccounts;
+        private System.Windows.Forms.Button button1;
     }
 }
