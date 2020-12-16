@@ -28,7 +28,7 @@ namespace ANGGKT_beadando
             set
             {
                 passwordCheckPassed = value;
-                button2.Enabled = true;
+                button2.Enabled = passwordCheckPassed;
                 if (passwordCheckPassed)
                     ismetjelszotxt.BackColor = Color.White;
                 else

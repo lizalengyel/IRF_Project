@@ -32,11 +32,11 @@ namespace UnitTest.Test
         }
 
         [Test,
-            TestCase("AppleAndCherry", false),
-            TestCase("11PANCAKES", false),
-            TestCase("11pancakes", false),
-            TestCase("Apple1", false),
-            TestCase("11PanCakes", true)
+            TestCase("TomAndJerry", false),
+            TestCase("22TOMANDJERRY", false),
+            TestCase("22tomandjerry", false),
+            TestCase("Jerry2", false),
+            TestCase("22TomandJerry", true)
         ]
         public void TestValidatePassword(string password, bool expectedResult)
         {
