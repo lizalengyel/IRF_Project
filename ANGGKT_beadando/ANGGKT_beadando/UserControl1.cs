@@ -28,7 +28,7 @@ namespace ANGGKT_beadando
             set
             {
                 passwordCheckPassed = value;
-                button2.Enabled = passwordCheckPassed;
+                button2.Enabled = true;
                 if (passwordCheckPassed)
                     ismetjelszotxt.BackColor = Color.White;
                 else
@@ -40,12 +40,32 @@ namespace ANGGKT_beadando
         {
             InitializeComponent();
             PasswordCheckPassed = true;
+            passwordtextbox.PasswordChar = '*';
+            ismetjelszotxt.PasswordChar = '*';
         }
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
 
         }
+
+        public bool ValidateEmail(string email)
+        {
+            return Regex.IsMatch(
+                email,
+                @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+        }
+
+        public bool ValidatePassword(string password)
+        {
+            return true;
+        }
+
+        private void passwordtextbox_TextChanged(object sender, EventArgs e)
+        {
+            PasswordCheckPassed = passwordtextbox.Text.Equals(ismetjelszotxt.Text);
+        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -82,22 +102,8 @@ namespace ANGGKT_beadando
 
 
 
-        public bool ValidateEmail(string email)
-        {
-            return Regex.IsMatch(
-                email,
-                @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
-        }
-
-        public bool ValidatePassword(string password)
-        {
-            return true;
-        }
-
-        private void passwordtextbox_TextChanged(object sender, EventArgs e)
-        {
-            PasswordCheckPassed = passwordtextbox.Text.Equals(ismetjelszotxt.Text);
-        }
+      
+ 
 
 
 

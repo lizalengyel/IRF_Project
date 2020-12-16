@@ -121,9 +121,10 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1087, 735);
+            this.panel1.Size = new System.Drawing.Size(1156, 735);
             this.panel1.TabIndex = 0;
             // 
             // groupBox1
@@ -214,7 +215,7 @@
             this.button2.Font = new System.Drawing.Font("Papyrus", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::ANGGKT_beadando.Properties.Resources.Users_Enter_2_icon;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(949, 7);
+            this.button2.Location = new System.Drawing.Point(1018, 7);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 43);
             this.button2.TabIndex = 33;
@@ -475,9 +476,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::ANGGKT_beadando.Properties.Resources.cica3;
             this.pictureBox1.Location = new System.Drawing.Point(70, 163);
             this.pictureBox1.Name = "pictureBox1";
@@ -492,7 +490,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Papyrus", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(450, 16);
+            this.label4.Location = new System.Drawing.Point(519, 16);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(107, 25);
             this.label4.TabIndex = 5;
@@ -501,7 +499,7 @@
             // textBox2
             // 
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(815, 14);
+            this.textBox2.Location = new System.Drawing.Point(884, 14);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(119, 26);
             this.textBox2.TabIndex = 4;
@@ -509,7 +507,7 @@
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(628, 14);
+            this.textBox1.Location = new System.Drawing.Point(697, 14);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(127, 26);
             this.textBox1.TabIndex = 3;
@@ -519,7 +517,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Papyrus", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(761, 14);
+            this.label3.Location = new System.Drawing.Point(830, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 25);
             this.label3.TabIndex = 2;
@@ -530,7 +528,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Papyrus", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(572, 14);
+            this.label2.Location = new System.Drawing.Point(641, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 25);
             this.label2.TabIndex = 1;
@@ -554,7 +552,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1087, 735);
+            this.ClientSize = new System.Drawing.Size(1156, 735);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";

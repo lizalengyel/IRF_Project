@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using ANGGKT_beadando;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,7 @@ namespace UnitTest.Test
         {
             // Arrange
 
-            ANGGKT_beadando.UserControl1 uc = new ANGGKT_beadando.UserControl1();
+           UserControl1 uc = new UserControl1();
             // Act
             var actualresult = uc.ValidateEmail(email);
 

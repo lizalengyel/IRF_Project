@@ -54,6 +54,18 @@ namespace ANGGKT_beadando
             macska.van_egazdi = false;
             macska.felvetel = Convert.ToDateTime(datum);
             macska.neme = neme;
+
+            try
+            {
+                context.SaveChanges();
+                MessageBox.Show("Sikeres macskafelvétel! :)");
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)

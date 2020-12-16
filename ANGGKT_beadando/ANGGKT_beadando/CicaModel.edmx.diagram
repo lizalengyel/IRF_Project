@@ -6,7 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="701bc746b5be4ba19ae6b4ad61956bac" Name="Diagram1">
         <EntityTypeShape EntityType="Database1Model.Account" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="Database1Model.Admin" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Database1Model.Admin" Width="1.5" PointX="1" PointY="4.25" IsExpanded="true" />
         <EntityTypeShape EntityType="Database1Model.CICA" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="Database1Model.Gazda" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
         <AssociationConnector Association="Database1Model.FK_Gazda_ToTable" ManuallyRouted="false" />

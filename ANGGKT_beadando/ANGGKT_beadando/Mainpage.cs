@@ -31,16 +31,10 @@ namespace ANGGKT_beadando
 
             g.SmoothingMode = SmoothingMode.AntiAlias;
 
-            Rectangle rec = new Rectangle(10, 10, 150, 150);
-            Rectangle rec1 = new Rectangle(150, 150, 100, 100);
-
-            Pen pirosP = new Pen(Color.Red, 4);
             Pen feketeP = new Pen( Color.Black, 4);
 
             SolidBrush zoldB = new SolidBrush(Color.Green);
 
-            //g.DrawRectangle(pirosP, rec);
-            //g.DrawRectangle(feketeP, rec1);
             g.DrawLine(feketeP, 0, 85, this.Width, 85);
             g.FillEllipse(Brushes.DarkCyan, 165, 40, 30, 30);
             g.FillEllipse(Brushes.LightCyan, 195, 30, 40, 40);
