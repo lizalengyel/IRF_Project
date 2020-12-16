@@ -241,6 +241,7 @@
       <DependentUpon>CicaModel.edmx</DependentUpon>
       <LastGenOutput>CicaModel.cs</LastGenOutput>
     </Content>
+    <Content Include="README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
