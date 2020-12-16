@@ -89,7 +89,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Garamond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Image = global::ANGGKT_beadando.Properties.Resources.check_icon1;
+          //  this.button2.Image = global::ANGGKT_beadando.Properties.Resources.check_icon1;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(160, 307);
             this.button2.Name = "button2";
